@@ -9,11 +9,13 @@ export function initializeDeck() {
   return deck;
 }
 
-function setupOrderedDeck() {
+export function setupOrderedDeck() {
   const deck = [];
-  for (let i = 1; i < 14; i++) { // 1 = ace, 11 = jack, 12 = queen, 13 = king
-    for (let j = 0; j < 4; j++) { // 0 = hearts, 1 = diamonds, 2 = clubs, 3 = spades
-      deck.push({value: i, suit: j});
+  for (let i = 1; i < 14; i++) {
+    // 1 = ace, 11 = jack, 12 = queen, 13 = king
+    for (let j = 0; j < 4; j++) {
+      // 0 = hearts, 1 = diamonds, 2 = clubs, 3 = spades
+      deck.push({ value: i, suit: j });
     }
   }
   return deck;

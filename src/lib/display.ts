@@ -3,13 +3,12 @@ export function toPrintableValue(numericValue: number) {
     1: "A",
     11: "J",
     12: "Q",
-    13: "K"
+    13: "K",
   };
 
   if (numericValue in printableValueMap) {
     return printableValueMap[numericValue];
-  }
-  else return numericValue.toString();
+  } else return numericValue.toString();
 }
 
 export function toImageName(suit: number) {
@@ -18,7 +17,6 @@ export function toImageName(suit: number) {
     1: "Diamonds",
     2: "Clubs",
     3: "Spades",
-    4: "CardBack",
   };
   return suitToImageMap[suit];
 }
