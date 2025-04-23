@@ -1,21 +1,26 @@
-﻿# Memory Game in JavaScript
+﻿# Memory Game
 
-This is the Memory card game implemented in HTML/CSS/JavaScript with tests written in QUnit.
+This is the Memory card game implemented in Next.js/TypeScript with tests written in Jest.
 
-The deck of 52 cards is dealt face down.  The player may flip two cards face up each turn.  If the face values match, the cards are removed.  The goal is the remove all of the cards in the least number of moves possible.  Remembering what cards have previously been flipped and where is the key!
+I am disappointed that Jest does not have `structuredClone`.
+
+The deck of 52 cards is dealt face down. The player may flip two cards face up each turn by clicking on them. If the face values (Ace-King) match, the cards are removed. If the values do not match, the cards are flipped face down again. The goal is the remove all of the cards in the least number of moves possible. Remembering what cards have previously been flipped and where is the key!
 
 ![](GameScreenshot.png)
 
 ## Running the Game
 
-Clone the repository, then double-click on the `index.html` file.
+```
+npm run dev
+```
 
 ## Running the Unit Tests
 
-Clone the repository, then double-click on the `tests.html` file.
+```
+npm run test
+```
 
 ## Supported Browsers
 
-* Chrome
-* Firefox
-* Internet Explorer 11
+- Chrome
+- Firefox
